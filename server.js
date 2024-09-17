@@ -1,6 +1,5 @@
 const express = require('express');
-const dotenv = require("dotenv");
-dotenv.config();
+
 const mongodb = require('./mongodb'); // if I need anything from the databse, export the function from aforementioned file first
 
 mongodb.dbInit().catch(console.error);;
